@@ -62,24 +62,12 @@ module "alb" {
         status_code = "HTTP_301"
       }
     }
-      }
-    }
-
-  target_groups = {
-    ex-instance = {
-      name_prefix      = "blog-"
-      protocol         = "HTTP"
-      port             = 80
-      target_type      = "instance"
-        }
-      }
-    }
   }
+}
 
   tags = {
     Environment = "dev"
   }
-}
 
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
