@@ -72,7 +72,7 @@ module "blog_alb" {
       protocol         = "HTTP"
       port             = 80
       target_type      = "instance"
-      target_id        = madule.blog_vpc.vpc_id
+      target_id        = module.blog_vpc.vpc_id
     }
   }
 
