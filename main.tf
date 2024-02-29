@@ -64,15 +64,6 @@ module "alb" {
     }
   }
 
-  target_groups = {
-    ex-instance = {
-      name_prefix      = "blog-"
-      backend_protocol = "HTTP"
-      backend_port     = 80
-      target_type      = "instance"
-    }
-  }
-
   tags = {
     Environment = "dev"
   }
