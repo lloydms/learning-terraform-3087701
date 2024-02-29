@@ -64,7 +64,6 @@ module "alb" {
     }
       }
     }
-  }
 
   target_groups = {
     ex-instance = {
